@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: rgb(34, 34, 34);
+  background-color: rgb(247, 247, 247);
+}
+
+/* Stylization of USER LIST */
+ul {
+  position: relative;
+  width: 50%;
+  margin: 100px auto 0;
+  padding: 10px;
+}
+h1.title {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 10px;
+}
+.top-line {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(238, 118, 20);
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.bcg-white {
+  background: #fff;
+}
+.bcg-grey {
+  background: rgb(238, 238, 238);
+}
+
+.user-badge {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.user-badge img {
+  width: 25px;
+}
+
+.user-nikname {
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+.user-name {
+  font-weight: 400;
+  color: #2b2b2b;
+}
+.user-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.user-options-menu a {
+  cursor: pointer;
+}
+
+.user-options-menu img {
+  width: 25px;
+  transform: rotate(90deg);
+}
+/* END Stylization of USER LIST */
+
+/*Pagination Castomizing*/
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pagination span a {
+  overflow: hidden;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.pagination span a img {
+  width: 25px;
+  padding-left: 5px;
+}
+
+/* Pagination Underline Animation */
+a.underline {
+  display: inline-block;
+  position: relative;
+  color: rgb(238, 118, 20);
+}
+
+a.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(238, 118, 20);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a.underline:focus:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* END Pagination Castomizing*/
